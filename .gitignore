@@ -1,0 +1,40 @@
+# --- Secrets ---------------------------------------------------------------
+# Ignore everything under .secrets/ ...
+.secrets/*
+# ... except the committed example templates.
+!.secrets/*.example
+!.secrets/README.md
+
+# Keys / certs
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Env files (keep .env.example templates)
+.env
+.env.*
+!.env.example
+*.env
+!*.env.example
+
+# --- Terraform -------------------------------------------------------------
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+crash.log
+
+# Local var files (keep the .example template)
+terraform.tfvars
+*.auto.tfvars
+!*.tfvars.example
+
+# --- Misc ------------------------------------------------------------------
+*.log
+.DS_Store
+__pycache__/
+*.pyc
