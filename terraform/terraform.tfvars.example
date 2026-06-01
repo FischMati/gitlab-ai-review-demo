@@ -1,0 +1,15 @@
+# Copy this file to terraform.tfvars and fill in your own values.
+# terraform.tfvars is gitignored so your environment-specific config and IPs
+# never get committed.
+
+# CIDR allowed to reach GitLab over HTTP/HTTPS/SSH.
+# Use your own admin / office / VPN egress IP range. NEVER use 0.0.0.0/0.
+allowed_admin_cidr = "203.0.113.10/32"
+
+# Optional overrides (defaults are fine for most demos):
+# region               = "us-east-1"
+# name_prefix          = "ai-review-demo"
+# gitlab_instance_type = "t3.large"
+# runner_instance_type = "t3.medium"
+# ami_id               = "ami-02fd066b86800f60c" # Ubuntu 22.04 LTS amd64 in your region
+# owner                = "demo"                  # value for the Owner tag
